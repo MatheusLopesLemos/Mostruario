@@ -119,4 +119,70 @@ html{
     
 }
 
+.highlights {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.highlights h1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    height: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+.highlights p {
+
+    font-size: 2.5rem;
+    color: var(--gray);
+    font-weight: 500;
+
+}
+
+.sneakers {
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 30rem 30rem 30rem 30rem;
+    grid-template-rows: 35rem 35rem;
+    gap: 2rem;
+    margin-top: 4rem;
+    
+}
+
+.cards {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--offwhite);
+    border-radius: 5px;
+
+}
+
+.cards img {
+
+    width: 25rem;
+    transition: all .4s ease;
+
+}
+
+.cards img:hover {
+
+    transform: scale(1.2);
+
+
+}
+
 
