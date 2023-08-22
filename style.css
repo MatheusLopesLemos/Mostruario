@@ -57,7 +57,7 @@ html{
     display: flex;
     width: 100vw;
     height: 85vh;
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/AJ1.avif');
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/AJ1.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
