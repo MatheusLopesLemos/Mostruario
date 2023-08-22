@@ -3,12 +3,6 @@
     --offwhite: #EBE9EA;
     --gray: #474747;
     --light-black: #181818;
-}
-
-html{
-
-    font-size: 62.5%;
-    font-family: Montserrat,sans-serif;
 
 }
 
@@ -21,16 +15,25 @@ html{
 
 }
 
+html{
+
+    font-size: 62.5%;
+    font-family: Montserrat,roboto,sans-serif;
+
+}
+
+/* Header */
+
 .discountHeader{
 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 5rem;
+    width: 100vw;
+    height: 7rem;
     color: var(--offwhite);
-    background-color: black;
-    font-size: 0.8rem;
+    background-color: var(--light-black);
+    font-size: 1rem;
 
 }
 
@@ -39,24 +42,27 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 5rem;
-    color: black;
+    width: 100vw;
+    height: 7rem;
+    color: var(--light-black);
     background-color: white;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 
 }
 
+/* Outdoor */
+
 .outdoor {
-    
-    width: 100%;
-    height: 55rem;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/AJ1.avif');
+
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/AJ1.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    display: flex;
+    
 }
 
 .outdoorText {
@@ -67,14 +73,13 @@ html{
     margin-left: 12rem;
     color: var(--offwhite) ;
 
-
 }
 
 .outdoorText h2 {
 
     font-size: 4.5rem;
     margin-bottom: 2rem;
-
+    
 }
 
 .outdoorText p {
@@ -82,8 +87,11 @@ html{
     font-size: 2rem ;
     white-space: nowrap;
     overflow: hidden;
+    margin-top: 1rem;
     
 }
+
+/* Outdoor animation */
 
 .typingAnimation{
 
@@ -93,7 +101,7 @@ html{
 
 .typingAnimation2{
 
-    animation: typing 4s steps(80) 5.5s normal both
+    animation: typing 4s steps(80) 4.5s normal both
 
 }
 
@@ -114,10 +122,12 @@ html{
         width: 0;
     }
     to{
-        width: rem;
+        width: 60rem;
     }
     
 }
+
+/* Highlights */
 
 .highlights {
 
@@ -126,7 +136,6 @@ html{
     align-items: center;
     justify-content: center;
     
-
 }
 
 .highlights h1 {
@@ -149,15 +158,19 @@ html{
 
 }
 
-.sneakers {
+/* Highlights cards */
+
+.cards-container {
 
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-columns: 30rem 30rem 30rem 30rem;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
     grid-template-rows: 35rem 35rem;
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     
 }
 
@@ -173,15 +186,30 @@ html{
 
 .cards img {
 
-    width: 25rem;
+    width: 30rem;
     transition: all .4s ease;
 
 }
 
 .cards img:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.1);
 
+}
+
+/* Footer */
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-black);
+    margin-top: 7rem;
+    width: 100vw;
+    height: 7rem;
+    color: var(--offwhite);
+    font-size: 1rem;
 
 }
 
